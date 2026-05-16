@@ -7,6 +7,8 @@ export default function ProductCard({ product, updatePrice }) {
 
   return (
     <>
+    <Link
+              to={`/products/${product.slug}`}>
       <div className="bg-[#3a1b0b] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300">
         <img
           src={product.image}
@@ -54,15 +56,10 @@ export default function ProductCard({ product, updatePrice }) {
             >
               Edit Price
             </button>
-            <Link
-              to={`/products/${product.slug}`}
-              className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-4 py-2 rounded-lg font-semibold transition"
-            >
-              View Details
-            </Link>
           </div>
         </div>
       </div>
+      </Link>
     </>
   );
 }

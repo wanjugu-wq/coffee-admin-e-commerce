@@ -52,11 +52,11 @@ export default function ProductDetails() {
             {product.category}
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-amber-300">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-amber-400">
             {product.name}
           </h1>
 
-          <p className="text-stone-300 text-lg leading-relaxed mb-8">
+          <p className="text-stone-700 text-lg leading-relaxed mb-8">
             {product.description}
           </p>
 
@@ -64,7 +64,7 @@ export default function ProductDetails() {
             <div>
               <p className="text-stone-400 mb-2">Price</p>
 
-              <h2 className="text-4xl font-bold">${product.price}</h2>
+              <h2 className="text-4xl font-bold">Ksh {product.price}</h2>
             </div>
 
             <div>
@@ -83,22 +83,15 @@ export default function ProductDetails() {
 
             <div className="space-y-3 text-stone-300">
               <p>
-                <span className="font-semibold text-amber-300">Category:</span>{" "}
+                <span className="font-semibold text-amber-400">Category:</span>{" "}
                 {product.category}
               </p>
 
               <p>
-                <span className="font-semibold text-amber-300">
+                <span className="font-semibold text-amber-400">
                   Availability:
                 </span>{" "}
                 {product.stock > 0 ? "In Stock" : "Out Of Stock"}
-              </p>
-
-              <p>
-                <span className="font-semibold text-amber-300">
-                  Product Slug:
-                </span>{" "}
-                {product.slug}
               </p>
             </div>
           </div>
@@ -108,16 +101,9 @@ export default function ProductDetails() {
           <div className="flex flex-wrap gap-4">
             <Link
               to="/products"
-              className="bg-amber-500 hover:bg-amber-400 text-black px-8 py-4 rounded-xl font-bold transition"
+              className="bg-amber-500 hover:bg-amber-600 text-stone-100 px-8 py-4 rounded-xl font-bold transition"
             >
               Back To Products
-            </Link>
-
-            <Link
-              to="/add-product"
-              className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 rounded-xl font-bold transition"
-            >
-              Add Another Product
             </Link>
           </div>
         </div>
