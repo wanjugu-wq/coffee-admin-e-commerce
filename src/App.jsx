@@ -7,6 +7,7 @@ import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
   return (
+    <div className="app-scroll">
     <div className="min-h-screen bg-[#f7f3ee] text-[#2b1d17]">
       <Navbar />
 
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/add-product" element={<AddProduct />} />
         <Route path="/products/:slug" element={<ProductDetails />} />
       </Routes>
+    </div>
     </div>
   );
 }

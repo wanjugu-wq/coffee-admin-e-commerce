@@ -29,12 +29,7 @@ export default function Home() {
               Explore Products
             </Link>
 
-            <Link
-              to="/add-product"
-              className="border border-amber-400 hover:bg-stone-100 hover:text-black px-8 py-4 rounded-xl font-bold transition"
-            >
-              Add Product
-            </Link>
+            
           </div>
         </div>
       </section>

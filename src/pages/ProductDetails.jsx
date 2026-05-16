@@ -76,8 +76,8 @@ export default function ProductDetails() {
 
           {/* EXTRA INFO */}
 
-          <div className="bg-[#2a221e] p-6 rounded-2xl mb-8">
-            <h3 className="text-2xl font-bold text-amber-400 mb-4">
+          <div className="bg-[#4d230f] p-6 rounded-2xl mb-8">
+            <h3 className="text-2xl font-bold text-stone-200 mb-4">
               Product Information
             </h3>
 

@@ -6,3 +6,9 @@ body {
   background-color: #f7f3ee;
   color: #2b1d17;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
