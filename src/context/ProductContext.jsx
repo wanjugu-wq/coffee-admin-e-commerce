@@ -1,14 +1,21 @@
 import { createContext, useEffect, useState } from "react";
+<<<<<<< HEAD
 import toast from "react-hot-toast";
 
 export const ProductContext = createContext();
 
 const BASE_URL = "http://localhost:3001";
 
+=======
+
+export const ProductContext = createContext();
+
+>>>>>>> c3a3d64 (AI manufactured crap :/)
 export function ProductProvider({ children }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
+<<<<<<< HEAD
   // Fetch Products
   useEffect(() => {
     const fetchProducts = async () => {
@@ -67,16 +74,46 @@ export function ProductProvider({ children }) {
     }
   };
 
+=======
+  useEffect(() => {
+    fetch("http://localhost:3001/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      });
+  }, []);
+  function addProduct(product) {
+    setProducts((prev) => [...prev, product]);
+  }
+
+  function updatePrice(id, newPrice) {
+    setProducts((prev) =>
+      prev.map((product) =>
+        product.id === id ? { ...product, price: newPrice } : product,
+      ),
+    );
+  }
+>>>>>>> c3a3d64 (AI manufactured crap :/)
   return (
     <ProductContext.Provider
       value={{
         products,
         loading,
+<<<<<<< HEAD
         deleteProduct,
         updateProduct,
+=======
+        addProduct,
+        updatePrice,
+>>>>>>> c3a3d64 (AI manufactured crap :/)
       }}
     >
       {children}
     </ProductContext.Provider>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c3a3d64 (AI manufactured crap :/)
