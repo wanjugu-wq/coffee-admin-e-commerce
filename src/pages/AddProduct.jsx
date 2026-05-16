@@ -50,8 +50,8 @@ export default function AddProduct() {
 
   return (
     <div className="min-h-screen px-6 py-12">
-      <div className="max-w-3xl mx-auto bg-[#2a221e] p-8 rounded-2xl shadow-xl">
-        <h1 className="text-4xl font-bold text-amber-400 mb-8">
+      <div className="max-w-3xl mx-auto bg-[#3a1b0b] p-8 rounded-2xl shadow-xl">
+        <h1 className="text-4xl font-bold text-amber-500 mb-8">
           Add New Product
         </h1>
 
@@ -62,11 +62,11 @@ export default function AddProduct() {
             <input
               type="text"
               name="name"
-              placeholder="Caramel Latte"
+              placeholder=""
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 focus:outline-none focus:border-amber-500"
+              className="w-full p-4 rounded-full bg-stone-200 border border-stone-700 focus:outline-none focus:border-amber-500"
             />
           </div>
 
@@ -78,7 +78,7 @@ export default function AddProduct() {
               value={formData.category}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 focus:outline-none focus:border-amber-500"
+              className="w-full p-4 rounded-full bg-stone-200 border border-stone-700 focus:outline-none focus:border-amber-500"
             >
               <option value="">Select Category</option>
               <option value="Coffee">Coffee</option>
@@ -95,11 +95,11 @@ export default function AddProduct() {
               <input
                 type="number"
                 name="price"
-                placeholder="6"
+                placeholder="Price"
                 value={formData.price}
                 onChange={handleChange}
                 required
-                className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 focus:outline-none focus:border-amber-500"
+                className="w-full p-4 rounded-full bg-stone-200 border border-stone-700 focus:outline-none focus:border-amber-500"
               />
             </div>
 
@@ -113,7 +113,7 @@ export default function AddProduct() {
                 value={formData.stock}
                 onChange={handleChange}
                 required
-                className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 focus:outline-none focus:border-amber-500"
+                className="w-full p-4 rounded-full bg-stone-200 border border-stone-700 focus:outline-none focus:border-amber-500"
               />
             </div>
           </div>
@@ -124,11 +124,11 @@ export default function AddProduct() {
             <input
               type="text"
               name="image"
-              placeholder="https://..."
+              placeholder="Link"
               value={formData.image}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 focus:outline-none focus:border-amber-500"
+              className="w-full p-4 rounded-full bg-stone-200 border border-stone-700 focus:outline-none focus:border-amber-500"
             />
           </div>
 
@@ -141,13 +141,13 @@ export default function AddProduct() {
               value={formData.description}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl bg-[#1b1715] border border-stone-700 h-36 resize-none focus:outline-none focus:border-amber-500"
+              className="w-full p-4 rounded-lg bg-stone-200 border border-stone-700 h-36 resize-none focus:outline-none focus:border-amber-500"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-amber-500 hover:bg-amber-400 text-black py-4 rounded-xl font-bold text-lg transition"
+            className="w-full bg-amber-500 hover:bg-amber-400 text-black py-4 rounded-full font-bold text-lg transition"
           >
             Add Product
           </button>
