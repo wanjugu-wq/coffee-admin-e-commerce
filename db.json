@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caramel Latte",
+      "slug": "caramel-latte",
+      "price": 6,
+      "category": "Coffee",
+      "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348",
+      "description": "Creamy caramel espresso latte.",
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "name": "Mocha Roast",
+      "slug": "mocha-roast",
+      "price": 7,
+      "category": "Coffee",
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
+      "description": "Chocolate infused mocha roast.",
+      "stock": 9
+    }
+  ]
+}
