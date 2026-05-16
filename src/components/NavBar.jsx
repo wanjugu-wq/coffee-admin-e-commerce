@@ -10,19 +10,19 @@ export default function Navbar() {
       <div className="flex gap-6 text-[#2b1d17]">
         <NavLink
           to="/"
-          className="hover:underline hover:decoration-orange-500 transition-all duration-1000 text-white font-bold italic "
+          className="hover:underline hover:decoration-orange-500 transition-all duration-500 text-white font-bold italic "
         >
           Home
         </NavLink>
         <NavLink
           to="/products"
-          className="hover:underline hover:decoration-orange-500 transition-all duration-1000  text-white font-bold italic"
+          className="hover:underline hover:decoration-orange-500 transition-all duration-500  text-white font-bold italic"
         >
           Products
         </NavLink>
         <NavLink
           to="/add-product"
-          className="hover:underline hover:decoration-orange-500 transition-all duration-1000 text-white font-bold italic"
+          className="hover:underline hover:decoration-orange-500 transition-all duration-500 text-white font-bold italic"
         >
           Add Product
         </NavLink>

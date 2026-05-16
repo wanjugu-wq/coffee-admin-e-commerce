@@ -10,7 +10,7 @@ export default function ProductCard({ product, updatePrice }) {
   }
 
   return (
-    <div className="bg-[#2a221e] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300">
+    <div className="bg-[#3a1b0b] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition duration-300">
       <img
         src={product.image}
         alt={product.name}
@@ -34,13 +34,13 @@ export default function ProductCard({ product, updatePrice }) {
           <div>
             <p className="text-sm text-stone-400">Price</p>
 
-            <p className="text-2xl font-bold">${product.price}</p>
+            <p className="text-2xl font-bold text-stone-200">Ksh {product.price}</p>
           </div>
 
           <div>
             <p className="text-sm text-stone-400">Stock</p>
 
-            <p className="text-lg font-semibold">{product.stock}</p>
+            <p className="text-lg font-semibold text-stone-200">{product.stock}</p>
           </div>
         </div>
 

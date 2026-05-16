@@ -16,8 +16,8 @@ export default function Products() {
 
   return (
     <div className="p-6">
-      <div className="mb-8">
-        <SearchBar search={search} setSearch={setSearch} />
+      <div className="mb-8 flex justify-center align-middle">
+        <SearchBar search={search} setSearch={setSearch}/>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProducts.map((product) => (
