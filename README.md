@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Brew and Bean Co. Coffee Admin Portal
 
 A modern **React Single Page Application (SPA)** for managing a coffee shop’s products.  
