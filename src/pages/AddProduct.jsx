@@ -36,7 +36,7 @@ export default function AddProduct() {
       body: JSON.stringify(newProduct),
     });
 
-    alert("Product Added Successfully");
+    toast.success("Product added ☕");
 
     setFormData({
       name: "",

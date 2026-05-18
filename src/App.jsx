@@ -6,6 +6,9 @@ import AddProduct from "./pages/AddProduct";
 import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
+  document.addEventListener("submit", (e) => {
+  console.log("🚨 FORM SUBMIT HAPPENED FROM:", e.target);
+});
   return (
     <div className="app-scroll">
     <div className="min-h-screen bg-[#f7f3ee] text-[#2b1d17]">
