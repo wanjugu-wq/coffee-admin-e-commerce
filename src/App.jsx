@@ -10,8 +10,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-[#f7f3ee] text-[#2b1d17]">
       <Navbar />
-
-      {/* flex-1 makes this section grow and push the footer down */}
+      
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,6 +21,16 @@ export default function App() {
       </main>
 
       <Footer />
+      
+    <div className="min-h-screen bg-[#f7f3ee] text-[#2b1d17]">
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/products/:slug" element={<ProductDetails />} />
+      </Routes>
     </div>
   );
 }
