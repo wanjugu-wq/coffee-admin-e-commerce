@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <div>
       <Hero />
-
       <section className="px-6 py-20 grid md:grid-cols-3 gap-8">
         <div className="bg-[#f7f3ee] p-6 rounded-xl">
           <h2 className="text-2xl font-bold mb-4 text-amber-400">

@@ -22,7 +22,7 @@ export default function ProductCard({ product }) {
     });
   }
 
-  async function handleUpdate(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     await updateProduct(product.id, form);
     setEditOpen(false);
@@ -34,7 +34,7 @@ export default function ProductCard({ product }) {
       {editOpen && (
         <div className="absolute inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
           <form
-            onSubmit={handleUpdate}
+            onSubmit={(e) => handleSubmit(e)}
             className="bg-white rounded-xl p-6 w-full"
           >
             <h2 className="text-lg font-bold mb-4">Edit Product</h2>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import slugify from "slugify";
+import { toast } from "react-hot-toast";
 
 export default function AddProduct() {
   const [formData, setFormData] = useState({
@@ -56,13 +57,16 @@ export default function AddProduct() {
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* NAME */}
           <div>
-            <label className="block mb-2 text-stone-300">Product Name</label>
+            <label htmlFor="name" className="block mb-2 text-stone-300">
+              Product Name
+            </label>
 
             <input
+              id="name"
               type="text"
               name="name"
-              placeholder=""
               value={formData.name}
               onChange={handleChange}
               required
@@ -70,10 +74,14 @@ export default function AddProduct() {
             />
           </div>
 
+          {/* CATEGORY */}
           <div>
-            <label className="block mb-2 text-stone-300">Category</label>
+            <label htmlFor="category" className="block mb-2 text-stone-300">
+              Category
+            </label>
 
             <select
+              id="category"
               name="category"
               value={formData.category}
               onChange={handleChange}
@@ -88,14 +96,17 @@ export default function AddProduct() {
             </select>
           </div>
 
+          {/* PRICE + STOCK */}
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block mb-2 text-stone-300">Price</label>
+              <label htmlFor="price" className="block mb-2 text-stone-300">
+                Price
+              </label>
 
               <input
+                id="price"
                 type="number"
                 name="price"
-                placeholder="Price"
                 value={formData.price}
                 onChange={handleChange}
                 required
@@ -104,12 +115,14 @@ export default function AddProduct() {
             </div>
 
             <div>
-              <label className="block mb-2 text-stone-300">Stock</label>
+              <label htmlFor="stock" className="block mb-2 text-stone-300">
+                Stock
+              </label>
 
               <input
+                id="stock"
                 type="number"
                 name="stock"
-                placeholder="10"
                 value={formData.stock}
                 onChange={handleChange}
                 required
@@ -118,13 +131,16 @@ export default function AddProduct() {
             </div>
           </div>
 
+          {/* IMAGE */}
           <div>
-            <label className="block mb-2 text-stone-300">Image URL</label>
+            <label htmlFor="image" className="block mb-2 text-stone-300">
+              Image URL
+            </label>
 
             <input
+              id="image"
               type="text"
               name="image"
-              placeholder="Link"
               value={formData.image}
               onChange={handleChange}
               required
@@ -132,12 +148,15 @@ export default function AddProduct() {
             />
           </div>
 
+          {/* DESCRIPTION */}
           <div>
-            <label className="block mb-2 text-stone-300">Description</label>
+            <label htmlFor="description" className="block mb-2 text-stone-300">
+              Description
+            </label>
 
             <textarea
+              id="description"
               name="description"
-              placeholder="Write product description..."
               value={formData.description}
               onChange={handleChange}
               required
