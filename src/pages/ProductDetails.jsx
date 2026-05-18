@@ -41,7 +41,11 @@ export default function ProductDetails() {
           <img
             src={product.image}
             alt={product.name}
+<<<<<<< HEAD
             className="w-full h-150 object-cover rounded-3xl shadow-2xl"
+=======
+            className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+>>>>>>> c3a3d64 (AI manufactured crap :/)
           />
         </div>
 
@@ -52,11 +56,19 @@ export default function ProductDetails() {
             {product.category}
           </p>
 
+<<<<<<< HEAD
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-amber-400">
             {product.name}
           </h1>
 
           <p className="text-stone-700 text-lg leading-relaxed mb-8">
+=======
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-amber-300">
+            {product.name}
+          </h1>
+
+          <p className="text-stone-300 text-lg leading-relaxed mb-8">
+>>>>>>> c3a3d64 (AI manufactured crap :/)
             {product.description}
           </p>
 
@@ -64,7 +76,11 @@ export default function ProductDetails() {
             <div>
               <p className="text-stone-400 mb-2">Price</p>
 
+<<<<<<< HEAD
               <h2 className="text-4xl font-bold">Ksh {product.price}</h2>
+=======
+              <h2 className="text-4xl font-bold">${product.price}</h2>
+>>>>>>> c3a3d64 (AI manufactured crap :/)
             </div>
 
             <div>
@@ -76,23 +92,46 @@ export default function ProductDetails() {
 
           {/* EXTRA INFO */}
 
+<<<<<<< HEAD
           <div className="bg-[#4d230f] p-6 rounded-2xl mb-8">
             <h3 className="text-2xl font-bold text-stone-200 mb-4">
+=======
+          <div className="bg-[#2a221e] p-6 rounded-2xl mb-8">
+            <h3 className="text-2xl font-bold text-amber-400 mb-4">
+>>>>>>> c3a3d64 (AI manufactured crap :/)
               Product Information
             </h3>
 
             <div className="space-y-3 text-stone-300">
               <p>
+<<<<<<< HEAD
                 <span className="font-semibold text-amber-400">Category:</span>{" "}
+=======
+                <span className="font-semibold text-amber-300">Category:</span>{" "}
+>>>>>>> c3a3d64 (AI manufactured crap :/)
                 {product.category}
               </p>
 
               <p>
+<<<<<<< HEAD
                 <span className="font-semibold text-amber-400">
+=======
+                <span className="font-semibold text-amber-300">
+>>>>>>> c3a3d64 (AI manufactured crap :/)
                   Availability:
                 </span>{" "}
                 {product.stock > 0 ? "In Stock" : "Out Of Stock"}
               </p>
+<<<<<<< HEAD
+=======
+
+              <p>
+                <span className="font-semibold text-amber-300">
+                  Product Slug:
+                </span>{" "}
+                {product.slug}
+              </p>
+>>>>>>> c3a3d64 (AI manufactured crap :/)
             </div>
           </div>
 
@@ -101,10 +140,24 @@ export default function ProductDetails() {
           <div className="flex flex-wrap gap-4">
             <Link
               to="/products"
+<<<<<<< HEAD
               className="bg-amber-500 hover:bg-amber-600 text-stone-100 px-8 py-4 rounded-xl font-bold transition"
             >
               Back To Products
             </Link>
+=======
+              className="bg-amber-500 hover:bg-amber-400 text-black px-8 py-4 rounded-xl font-bold transition"
+            >
+              Back To Products
+            </Link>
+
+            <Link
+              to="/add-product"
+              className="border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-black px-8 py-4 rounded-xl font-bold transition"
+            >
+              Add Another Product
+            </Link>
+>>>>>>> c3a3d64 (AI manufactured crap :/)
           </div>
         </div>
       </div>
