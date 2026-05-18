@@ -2,54 +2,37 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#211c19] border-t border-stone-800 px-6 py-12 mt-20">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-        {/* BRAND SECTION */}
+    <footer className="bg-[#211c19] text-center border-t border-stone-800 grid grid-cols-1 grid-rows-2 gap-7 p-12 w-full h-82">
+      <div className="flex flex-col justify-center items-center gap-1 pt-8">
+        <h2 className="text-3xl font-bold text-amber-400 mb-3">
+          Brew and Bean Co.
+        </h2>
+        <p className="text-stone-400">
+          Crafted with warmth &bull; Brewed with passion
+        </p>
+      </div>
+      <br />
+      <div className="grid md:grid-cols-2">
         <div>
-          <h2 className="text-3xl font-bold text-amber-400 mb-4">
-            Tavern Coffee
-          </h2>
-
-          <p className="text-stone-400 leading-relaxed">
-            A cozy tavern-inspired coffee house where every cup is crafted for
-            warmth, comfort, and connection.
-          </p>
+          <p className="text-stone-400">123 Kenyatta Avenue, Nairobi, Kenya</p>
+          <br />
+          <h3 className="mb-2 text-stone-400">Contact Us</h3>
+          <p className="mb-2 text-stone-400">Email: brown&b@gmail.com</p>
+          <p className="mb-2 text-stone-400">Phone: +254 712 345 678</p>
         </div>
-
-        {/* QUICK LINKS */}
         <div>
-          <h3 className="text-xl font-bold text-amber-300 mb-4">Quick Links</h3>
-
-          <div className="flex flex-col gap-3 text-stone-300">
+          <div className="flex flex-col gap-3 text-stone-400 pt-3">
             <Link to="/" className="hover:text-amber-400 transition">
               Home
             </Link>
-
             <Link to="/products" className="hover:text-amber-400 transition">
               Products
             </Link>
-
             <Link to="/add-product" className="hover:text-amber-400 transition">
               Add Product
             </Link>
           </div>
         </div>
-
-        {/* CONTACT / INFO */}
-        <div>
-          <h3 className="text-xl font-bold text-amber-300 mb-4">Contact</h3>
-
-          <div className="text-stone-400 space-y-2">
-            <p>📍 Nairobi, Kenya</p>
-            <p>📧 support@tavercoffee.com</p>
-            <p>📞 +254 700 000 000</p>
-          </div>
-        </div>
-      </div>
-
-      {/* BOTTOM BAR */}
-      <div className="text-center mt-10 pt-6 border-t border-stone-800 text-stone-500">
-        © {new Date().getFullYear()} Tavern Coffee. All rights reserved.
       </div>
     </footer>
   );

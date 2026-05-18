@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* HERO SECTION */}
+      {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center text-center px-6 overflow-hidden">
         <div className="absolute inset-0"></div>
 
@@ -28,13 +29,11 @@ export default function Home() {
             >
               Explore Products
             </Link>
-
-            
           </div>
         </div>
       </section>
 
-      {/* FEATURES SECTION */}
+      {/* Features Section */}
       <section className="px-6 py-10 bg-[#211c19]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -80,7 +79,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
+      {/* About Section */}
       <section className="px-6 py-24">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <img
@@ -113,23 +112,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="bg-[#211c19] py-10 text-center border-t border-stone-800 h-54 grid grid-cols-1 md:grid-cols-2">
-        <div>
-          <h2 className="text-3xl font-bold text-amber-400 mb-3">
-            Tavern Coffee
-          </h2>
-          <p className="text-stone-400">
-            Crafted with warmth &bull; Brewed with passion
-          </p>
-        </div>
-        <div>
-          <h3 className="mb-2 text-stone-400">Contact Us</h3>
-          <p className="mb-2 text-stone-400">Email: brown&b@example.com</p>
-          <p className="mb-2 text-stone-400">Phone: +254 712 345 678 </p>
-        </div>
-      </footer>
     </div>
   );
 }

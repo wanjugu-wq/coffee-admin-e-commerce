@@ -1,6 +1,7 @@
 import { useState } from "react";
 import slugify from "slugify";
 import { toast } from "react-hot-toast";
+import Footer from "../components/Footer";
 
 export default function AddProduct() {
   const [formData, setFormData] = useState({

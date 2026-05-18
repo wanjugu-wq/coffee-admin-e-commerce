@@ -4,6 +4,7 @@ import CategoryFilter from "../components/CategoryFilter";
 import { ProductContext } from "../context/ProductContext";
 import ProductCard from "../components/ProductCard";
 import SearchBar from "../components/SearchBar";
+import Footer from "../components/Footer";
 
 export default function Products() {
   const { products, loading } = useContext(ProductContext);
